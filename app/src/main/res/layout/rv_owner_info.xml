@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginTop"
+        style="@style/LineStyle"
+        android:layout_marginLeft="@dimen/margin4"
+        android:layout_marginRight="@dimen/margin4"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_owner_code"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            style="@style/LineContentStyle"
+            tools:text="OWNER001" />
+
+        <TextView
+            android:id="@+id/tv_owner_name"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            style="@style/LineContentStyle"
+            tools:text="货主" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/marginTop"
+        android:layout_marginLeft="@dimen/baseMargin"
+        android:background="@color/divider" />
+</LinearLayout>

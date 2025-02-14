@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/operatingButtonHeight"
+        android:orientation="vertical">
+
+        <include layout="@layout/include_title" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin10"
+            android:orientation="vertical"
+            android:background="@color/divider">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin10"
+                android:layout_marginTop="@dimen/margin10"
+                android:orientation="vertical"
+                android:background="@drawable/bg_input">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin10"
+                    style="@style/LineStyle"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:text="@string/fm_loc"
+                        style="@style/LineTitleStyle2" />
+
+                    <TextView
+                        android:id="@+id/tv_fm_loc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/LineContentStyle"
+                        tools:text="fmLoc" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin6"
+                    style="@style/LineStyle"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:text="@string/fm_id"
+                        style="@style/LineTitleStyle2" />
+
+                    <TextView
+                        android:id="@+id/tv_fm_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/LineContentStyle"
+                        tools:text="fmId" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin6"
+                    style="@style/LineStyle"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:text="@string/sku_code"
+                        style="@style/LineTitleStyle2" />
+
+                    <TextView
+                        android:id="@+id/tv_sku_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/LineContentStyle"
+                        tools:text="skuCode" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin6"
+                    style="@style/LineStyle"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:text="@string/sku_name"
+                        style="@style/LineTitleStyle2" />
+
+                    <TextView
+                        android:id="@+id/tv_sku_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/LineContentStyle"
+                        android:maxLines="3"
+                        android:ellipsize="end"
+                        tools:text="skuName" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin6"
+                    style="@style/LineStyle"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:text="@string/lot_num"
+                        style="@style/LineTitleStyle2" />
+
+                    <TextView
+                        android:id="@+id/tv_lot_num"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        style="@style/LineContentStyle"
+                        tools:text="lotNum" />
+
+                    <Button
+                        android:id="@+id/btn_select"
+                        android:layout_width="50dp"
+                        android:layout_height="25dp"
+                        android:background="@color/colorAccent"
+                        android:text="@string/view"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin6"
+                    style="@style/LineStyle"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:text="@string/pack_desc"
+                        style="@style/LineTitleStyle2" />
+
+                    <TextView
+                        android:id="@+id/tv_pack_desc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/LineContentStyle"
+                        tools:text="packDesc" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin6"
+                    android:layout_marginBottom="@dimen/margin10"
+                    style="@style/LineStyle"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:text="@string/f_uom"
+                        style="@style/LineTitleStyle2" />
+
+                    <TextView
+                        android:id="@+id/tv_f_uom"
+                        android:layout_width="0dp"
+                        android:layout_weight="3"
+                        android:layout_height="wrap_content"
+                        style="@style/LineContentStyle"
+                        tools:text="fUom" />
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:text="@string/alloc_qty"
+                        android:layout_weight="1"
+                        style="@style/LineTitleStyle3" />
+
+                    <TextView
+                        android:id="@+id/tv_alloc_qty"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        style="@style/LineContentStyle"
+                        tools:text="allocQty" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin10"
+                android:orientation="vertical"
+                android:background="@drawable/bg_input">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin10"
+                    style="@style/LineStyle"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:text="@string/t_uom"
+                        style="@style/LineTitleStyle2" />
+
+                    <com.sherlockshi.widget.SherlockSpinner
+                        android:id="@+id/sp_t_uom"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:gravity="left"
+                        style="@style/LineInputStyle"
+                        android:background="@null" />
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:text="@string/pick_qty"
+                        android:layout_weight="1"
+                        style="@style/LineTitleStyle3" />
+
+                    <EditText
+                        android:id="@+id/et_pick_qty"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        style="@style/LineInputStyle"
+                        android:background="@null"
+                        android:inputType="number|numberDecimal"
+                        android:imeOptions="actionNext"
+                        android:hint="@string/please_scan_or_input_pick_qty" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/divider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin10"
+                    style="@style/LineStyle"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:text="@string/to_pick_loc"
+                        style="@style/LineTitleStyle2" />
+
+                    <EditText
+                        android:id="@+id/et_to_loc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/LineInputStyle"
+                        android:background="@null"
+                        android:imeOptions="actionNext"
+                        android:hint="@string/please_scan_or_input_pick_loc" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/divider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin10"
+                    android:layout_marginBottom="@dimen/margin6"
+                    style="@style/LineStyle"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:text="@string/to_pick_id"
+                        style="@style/LineTitleStyle2" />
+
+                    <EditText
+                        android:id="@+id/et_to_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/LineInputStyle"
+                        android:background="@null"
+                        android:imeOptions="actionDone"
+                        android:hint="@string/please_scan_or_input_pick_id" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/divider" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/include_bottom_operating_buttons2" />
+
+    <include layout="@layout/include_progress_bar" />
+</RelativeLayout>

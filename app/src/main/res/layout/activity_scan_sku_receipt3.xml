@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin10"
+            android:orientation="vertical"
+            android:background="@color/divider">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin10"
+                android:layout_marginTop="@dimen/margin10"
+                android:orientation="vertical"
+                android:background="@drawable/bg_input">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin10"
+                    style="@style/LineStyle"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:text="@string/asn_no"
+                        style="@style/LineTitleStyle2" />
+
+                    <TextView
+                        android:id="@+id/tv_asn_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/LineContentStyle"
+                        tools:text="asnNo" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin6"
+                    style="@style/LineStyle"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:text="@string/trace_no"
+                        style="@style/LineTitleStyle2" />
+
+                    <TextView
+                        android:id="@+id/tv_trace_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/LineContentStyle"
+                        tools:text="traceNo" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin6"
+                    style="@style/LineStyle"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:text="@string/sku_code"
+                        style="@style/LineTitleStyle2" />
+
+                    <TextView
+                        android:id="@+id/tv_sku_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/LineContentStyle"
+                        tools:text="skuCode" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin6"
+                    style="@style/LineStyle"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:text="@string/sku_name"
+                        style="@style/LineTitleStyle2" />
+
+                    <TextView
+                        android:id="@+id/tv_sku_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/LineContentStyle"
+                        tools:text="skuName" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin6"
+                    style="@style/LineStyle"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:text="@string/pack_desc"
+                        style="@style/LineTitleStyle2" />
+
+                    <TextView
+                        android:id="@+id/tv_pack_desc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/LineContentStyle"
+                        tools:text="packDesc" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin6"
+                    style="@style/LineStyle"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:text="@string/ti_hi"
+                        style="@style/LineTitleStyle2" />
+
+                    <TextView
+                        android:id="@+id/tv_ti_hi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/LineContentStyle"
+                        tools:text="TiHi" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin6"
+                    android:layout_marginBottom="@dimen/margin10"
+                    style="@style/LineStyle"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:text="@string/f_uom"
+                        style="@style/LineTitleStyle2" />
+
+                    <TextView
+                        android:id="@+id/tv_fUom"
+                        android:layout_weight="3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        style="@style/LineContentStyle"
+                        tools:text="fUom" />
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/plan_qty"
+                        style="@style/LineTitleStyle3" />
+
+                    <TextView
+                        android:id="@+id/tv_plan_qty"
+                        android:layout_weight="4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        style="@style/LineContentStyle"
+                        tools:text="planQty" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:orientation="vertical"
+                android:background="@drawable/bg_input">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin10"
+                    style="@style/LineStyle"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:text="@string/t_uom"
+                        style="@style/LineTitleStyle2" />
+
+                    <com.sherlockshi.widget.SherlockSpinner
+                        android:id="@+id/sp_tUom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        style="@style/LineInputStyle"
+                        android:background="@null" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/divider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin10"
+                    style="@style/LineStyle"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:text="@string/rcv_qty"
+                        style="@style/LineTitleStyle2" />
+
+                    <EditText
+                        android:id="@+id/et_rcv_qty"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        style="@style/LineInputStyle"
+                        android:inputType="number|numberDecimal"
+                        android:imeOptions="actionNext"
+                        android:hint="@string/please_scan_or_input_rcv_qty" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/divider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin10"
+                    style="@style/LineStyle"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:text="@string/rcv_loc"
+                        style="@style/LineTitleStyle2" />
+
+                    <EditText
+                        android:id="@+id/et_rcv_loc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        style="@style/LineInputStyle"
+                        android:imeOptions="actionDone"
+                        android:hint="@string/please_scan_or_input_rcv_loc" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/divider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin10"
+                    android:layout_marginBottom="@dimen/margin6"
+                    style="@style/LineStyle"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:text="@string/rcv_trace_no"
+                        style="@style/LineTitleStyle2" />
+
+                    <EditText
+                        android:id="@+id/et_rcv_trace_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/LineInputStyle"
+                        android:background="@null"
+                        android:imeOptions="actionDone"
+                        android:hint="@string/please_scan_or_input_rcv_trace_no" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/divider" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/include_progress_bar" />
+
+    <include layout="@layout/include_bottom_operating_buttons" />
+</RelativeLayout>

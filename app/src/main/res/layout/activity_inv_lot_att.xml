@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/operatingButtonHeight"
+        android:orientation="vertical">
+
+        <include layout="@layout/include_title" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin10"
+            style="@style/LineStyle"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="@string/lot_att01"
+                style="@style/LineTitleStyle2" />
+
+            <TextView
+                android:id="@+id/tv_lot_att01"
+                style="@style/LineContentStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin6"
+            style="@style/LineStyle"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="@string/lot_att02"
+                style="@style/LineTitleStyle2" />
+
+            <TextView
+                android:id="@+id/tv_lot_att02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/LineContentStyle" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin6"
+            style="@style/LineStyle"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="@string/lot_att03"
+                style="@style/LineTitleStyle2" />
+
+            <TextView
+                android:id="@+id/tv_lot_att03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/LineContentStyle" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin6"
+            style="@style/LineStyle"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="@string/lot_att04"
+                style="@style/LineTitleStyle2" />
+
+            <TextView
+                android:id="@+id/tv_lot_att04"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/LineContentStyle" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin6"
+            style="@style/LineStyle"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="@string/lot_att05"
+                style="@style/LineTitleStyle2" />
+
+            <TextView
+                android:id="@+id/tv_lot_att05"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/LineContentStyle" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin6"
+            style="@style/LineStyle"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="@string/lot_att06"
+                style="@style/LineTitleStyle2" />
+
+            <TextView
+                android:id="@+id/tv_lot_att06"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/LineContentStyle" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin6"
+            style="@style/LineStyle"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="@string/lot_att07"
+                style="@style/LineTitleStyle2" />
+
+            <TextView
+                android:id="@+id/tv_lot_att07"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/LineContentStyle" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin6"
+            style="@style/LineStyle"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="@string/lot_att08"
+                style="@style/LineTitleStyle2" />
+
+            <TextView
+                android:id="@+id/tv_lot_att08"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/LineContentStyle" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin6"
+            style="@style/LineStyle"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="@string/lot_att09"
+                style="@style/LineTitleStyle2" />
+
+            <TextView
+                android:id="@+id/tv_lot_att09"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/LineContentStyle" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin6"
+            style="@style/LineStyle"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="@string/lot_att10"
+                style="@style/LineTitleStyle2" />
+
+            <TextView
+                android:id="@+id/tv_lot_att10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/LineContentStyle" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin6"
+            style="@style/LineStyle"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="@string/lot_att11"
+                style="@style/LineTitleStyle2" />
+
+            <TextView
+                android:id="@+id/tv_lot_att11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/LineContentStyle" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin6"
+            style="@style/LineStyle"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="@string/lot_att12"
+                style="@style/LineTitleStyle2" />
+
+            <TextView
+                android:id="@+id/tv_lot_att12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/LineContentStyle" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/include_progress_bar" />
+</RelativeLayout>

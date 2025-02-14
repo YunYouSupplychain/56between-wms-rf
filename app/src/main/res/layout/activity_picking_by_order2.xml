@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin10"
+            android:background="@color/divider"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin10"
+                android:layout_marginBottom="@dimen/margin10"
+                android:background="@drawable/bg_input"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    style="@style/LineStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin10"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/LineTitleStyle2"
+                        android:layout_height="wrap_content"
+                        android:text="@string/so_no" />
+
+                    <TextView
+                        android:id="@+id/tv_so_no"
+                        style="@style/LineContentStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="soNo" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_seq"
+                    style="@style/LineStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin6"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/LineTitleStyle2"
+                        android:layout_height="wrap_content"
+                        android:text="@string/seq" />
+
+                    <TextView
+                        android:id="@+id/tv_seq"
+                        style="@style/LineContentStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="seq" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/LineStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin6"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/LineTitleStyle2"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fm_loc" />
+
+                    <TextView
+                        android:id="@+id/tv_fm_loc"
+                        style="@style/LineContentStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="fmLoc" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/LineStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin6"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/LineTitleStyle2"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fm_id" />
+
+                    <TextView
+                        android:id="@+id/tv_fm_id"
+                        style="@style/LineContentStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="fmId" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/LineStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin6"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/LineTitleStyle2"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sku_code" />
+
+                    <TextView
+                        android:id="@+id/tv_sku_code"
+                        style="@style/LineContentStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="skuCode" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/LineStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin6"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/LineTitleStyle2"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sku_name" />
+
+                    <TextView
+                        android:id="@+id/tv_sku_name"
+                        style="@style/LineContentStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="skuName" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/LineStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin6"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/LineTitleStyle2"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lot_num" />
+
+                    <TextView
+                        android:id="@+id/tv_lot_num"
+                        style="@style/LineContentStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        tools:text="lotNum" />
+
+                    <Button
+                        android:id="@+id/btn_select"
+                        android:layout_width="50dp"
+                        android:layout_height="25dp"
+                        android:background="@color/colorAccent"
+                        android:text="@string/view"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/LineStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin6"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/LineTitleStyle2"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pack_desc" />
+
+                    <TextView
+                        android:id="@+id/tv_pack_desc"
+                        style="@style/LineContentStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="packDesc" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/LineStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin6"
+                    android:layout_marginBottom="@dimen/margin10"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/LineTitleStyle2"
+                        android:layout_height="wrap_content"
+                        android:text="@string/f_uom" />
+
+                    <TextView
+                        android:id="@+id/tv_f_uom"
+                        style="@style/LineContentStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        tools:text="fUom" />
+
+                    <TextView
+                        style="@style/LineTitleStyle3"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/alloc_qty" />
+
+                    <TextView
+                        android:id="@+id/tv_alloc_qty"
+                        style="@style/LineContentStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        tools:text="allocQty" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/bg_input"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    style="@style/LineStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin10"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/LineTitleStyle2"
+                        android:layout_height="wrap_content"
+                        android:text="@string/t_uom" />
+
+                    <com.sherlockshi.widget.SherlockSpinner
+                        android:id="@+id/sp_t_uom"
+                        style="@style/LineInputStyle"
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:background="@null"
+                        android:gravity="left" />
+
+                    <TextView
+                        style="@style/LineTitleStyle3"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/pick_qty" />
+
+                    <EditText
+                        android:id="@+id/et_pick_qty"
+                        style="@style/LineInputStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:background="@null"
+                        android:imeOptions="actionNext"
+                        android:inputType="number|numberDecimal" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/divider" />
+
+                <LinearLayout
+                    style="@style/LineStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin10"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/LineTitleStyle2"
+                        android:layout_height="wrap_content"
+                        android:text="@string/to_loc" />
+
+                    <EditText
+                        android:id="@+id/et_to_loc"
+                        style="@style/LineInputStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="@string/please_scan_or_input_to_loc"
+                        android:imeOptions="actionNext"
+                        android:paddingTop="-5dip"
+                        android:paddingBottom="-5dip" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/divider" />
+
+                <LinearLayout
+                    style="@style/LineStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin10"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/LineTitleStyle2"
+                        android:layout_height="wrap_content"
+                        android:text="@string/to_id" />
+
+                    <EditText
+                        android:id="@+id/et_to_id"
+                        style="@style/LineInputStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="@string/please_scan_or_input_to_id"
+                        android:imeOptions="actionDone" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/divider" />
+
+                <LinearLayout
+                    style="@style/LineStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin10"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/LineTitleStyle2"
+                        android:layout_height="wrap_content"
+                        android:text="@string/to_sku" />
+
+                    <EditText
+                        android:id="@+id/et_to_sku"
+                        style="@style/LineInputStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="@string/please_scan_to_sku"
+                        android:imeOptions="actionDone"
+                        android:paddingTop="-5dip"
+                        android:paddingBottom="-5dip" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/divider" />
+
+                <LinearLayout
+                    style="@style/LineStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin10"
+                    android:layout_marginBottom="@dimen/margin10"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/LineContentStyle"
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/complete_count_and_total_count" />
+
+                    <TextView
+                        android:id="@+id/tv_total_desc"
+                        style="@style/LineContentStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/include_progress_bar" />
+
+    <include layout="@layout/include_bottom_operating_buttons2" />
+</RelativeLayout>

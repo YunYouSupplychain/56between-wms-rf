@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.yunyou.androidwmsrf">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name="com.jess.arms.base.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo6_foreground"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo6_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <!-- arms配置 -->
+        <meta-data
+            android:name="${applicationId}.app.GlobalConfiguration"
+            android:value="ConfigModule" />
+
+        <activity
+            android:name="com.yunyou.androidwmsrf.mvp.ui.activity.LoginActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.yunyou.androidwmsrf.mvp.ui.activity.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yunyou.androidwmsrf.mvp.ui.activity.SetServerActivity"
+            android:label="@string/set_server"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yunyou.androidwmsrf.mvp.ui.activity.ReceiptActivity"
+            android:label="@string/receipt"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yunyou.androidwmsrf.mvp.ui.activity.ScanTrayReceipt1Activity"
+            android:label="@string/scan_tray_receipt1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yunyou.androidwmsrf.mvp.ui.activity.ScanTrayReceipt2Activity"
+            android:label="@string/scan_tray_receipt2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yunyou.androidwmsrf.mvp.ui.activity.ScanTrayReceipt3Activity"
+            android:label="@string/scan_tray_receipt3"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yunyou.androidwmsrf.mvp.ui.activity.ScanTrayReceiptTrayInfoActivity"
+            android:label="@string/scan_tray_receipt_tray_info"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yunyou.androidwmsrf.mvp.ui.activity.ScanSkuReceipt1Activity"
+            android:label="@string/scan_sku_receipt1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yunyou.androidwmsrf.mvp.ui.activity.ScanSkuReceipt2Activity"
+            android:label="@string/scan_sku_receipt2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yunyou.androidwmsrf.mvp.ui.activity.ScanSkuReceipt3Activity"
+            android:label="@string/scan_sku_receipt3"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yunyou.androidwmsrf.mvp.ui.activity.ScanSkuReceiptSkuInfoActivity"
+            android:label="@string/scan_sku_receipt_sku_info"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yunyou.androidwmsrf.mvp.ui.activity.ReceiptLotAttActivity"
+            android:label="@string/receipt_lot_att_info"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yunyou.androidwmsrf.mvp.ui.activity.PutawayActivity"
+            android:label="@string/putaway"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yunyou.androidwmsrf.mvp.ui.activity.ScanTrayPutaway1Activity"
+            android:label="@string/scan_tray_putaway1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yunyou.androidwmsrf.mvp.ui.activity.ScanTrayPutaway2Activity"
+            android:label="@string/scan_tray_putaway2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yunyou.androidwmsrf.mvp.ui.activity.ScanTaskPutaway1Activity"
+            android:label="@string/scan_task_putaway1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yunyou.androidwmsrf.mvp.ui.activity.ScanTaskPutaway2Activity"
+            android:label="@string/scan_task_putaway2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yunyou.androidwmsrf.mvp.ui.activity.ScanOrderPutaway1Activity"
+            android:label="@string/scan_order_putaway1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yunyou.androidwmsrf.mvp.ui.activity.ScanOrderPutaway2Activity"
+            android:label="@string/scan_order_putaway2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yunyou.androidwmsrf.mvp.ui.activity.PickingActivity"
+            android:label="@string/picking"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yunyou.androidwmsrf.mvp.ui.activity.PickingByTraceIdActivity"
+            android:label="@string/picking_by_trace_id"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yunyou.androidwmsrf.mvp.ui.activity.PickingByOrder1Activity"
+            android:label="@string/picking_by_order1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yunyou.androidwmsrf.mvp.ui.activity.PickingByOrder2Activity"
+            android:label="@string/picking_by_order2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yunyou.androidwmsrf.mvp.ui.activity.PickingByWave1Activity"
+            android:label="@string/picking_by_wave1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yunyou.androidwmsrf.mvp.ui.activity.PickingByWave2Activity"
+            android:label="@string/picking_by_wave2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yunyou.androidwmsrf.mvp.ui.activity.PickingByManual1Activity"
+            android:label="@string/picking_by_manual1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yunyou.androidwmsrf.mvp.ui.activity.PickingByManual2Activity"
+            android:label="@string/picking_by_manual2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yunyou.androidwmsrf.mvp.ui.activity.PickLotAttActivity"
+            android:label="@string/pick_lot_att_info"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yunyou.androidwmsrf.mvp.ui.activity.ShipmentActivity"
+            android:label="@string/ship"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yunyou.androidwmsrf.mvp.ui.activity.ShipmentByTraceIdActivity"
+            android:label="@string/shipment_by_trace_id"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yunyou.androidwmsrf.mvp.ui.activity.ShipmentByOrderActivity"
+            android:label="@string/shipment_by_order"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yunyou.androidwmsrf.mvp.ui.activity.ShipmentByTrackingNoActivity"
+            android:label="@string/shipment_by_face_no"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yunyou.androidwmsrf.mvp.ui.activity.MoveActivity"
+            android:label="@string/move"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yunyou.androidwmsrf.mvp.ui.activity.StandardMoveActivity"
+            android:label="@string/standard_move"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yunyou.androidwmsrf.mvp.ui.activity.InvQueryByMoveActivity"
+            android:label="@string/standard_move"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yunyou.androidwmsrf.mvp.ui.activity.WholeTrayMoveActivity"
+            android:label="@string/whole_tray_move"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yunyou.androidwmsrf.mvp.ui.activity.WholeLocMoveActivity"
+            android:label="@string/whole_loc_move"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yunyou.androidwmsrf.mvp.ui.activity.ReplenishmentActivity"
+            android:label="@string/replenishment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yunyou.androidwmsrf.mvp.ui.activity.ScanRpTask1Activity"
+            android:label="@string/scan_rp_task1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yunyou.androidwmsrf.mvp.ui.activity.ScanRpTask2Activity"
+            android:label="@string/scan_rp_task2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yunyou.androidwmsrf.mvp.ui.activity.CheckActivity"
+            android:label="@string/check"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yunyou.androidwmsrf.mvp.ui.activity.ScanTaskCheck1Activity"
+            android:label="@string/scan_task_check1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yunyou.androidwmsrf.mvp.ui.activity.ScanTaskCheck2Activity"
+            android:label="@string/scan_task_check2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yunyou.androidwmsrf.mvp.ui.activity.ScanTaskCheck3Activity"
+            android:label="@string/scan_task_check3"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yunyou.androidwmsrf.mvp.ui.activity.ScanTaskCheck4Activity"
+            android:label="@string/scan_task_check4"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yunyou.androidwmsrf.mvp.ui.activity.ScanTaskCheck5Activity"
+            android:label="@string/scan_task_check5"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yunyou.androidwmsrf.mvp.ui.activity.ScanTaskCheck6Activity"
+            android:label="@string/scan_task_check6"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yunyou.androidwmsrf.mvp.ui.activity.ScanTaskCheckOwnerInfoActivity"
+            android:label="@string/scan_task_check_owner_info"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yunyou.androidwmsrf.mvp.ui.activity.InventoryQueryActivity"
+            android:label="@string/inventory_query"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yunyou.androidwmsrf.mvp.ui.activity.InvQuery1Activity"
+            android:label="@string/inv_query1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yunyou.androidwmsrf.mvp.ui.activity.InvQuery2Activity"
+            android:label="@string/inv_query2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yunyou.androidwmsrf.mvp.ui.activity.InvLotAttActivity"
+            android:label="@string/inv_lot_att"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yunyou.androidwmsrf.mvp.ui.activity.InvPickBoxQuery1Activity"
+            android:label="@string/pick_box_query1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yunyou.androidwmsrf.mvp.ui.activity.InvPickBoxQuery2Activity"
+            android:label="@string/pick_box_query2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.yunyou.androidwmsrf.mvp.ui.activity.InvPickBoxQuery3Activity"
+            android:label="@string/pick_box_query3"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

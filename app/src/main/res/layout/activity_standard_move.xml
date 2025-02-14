@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/operatingButtonHeight"
+        android:orientation="vertical">
+
+        <include layout="@layout/include_title" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            style="@style/LineStyle"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="@string/fm_loc"
+                style="@style/LineTitleStyle2" />
+
+            <EditText
+                android:id="@+id/et_fm_loc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/LineInputStyle"
+                android:background="@null"
+                android:imeOptions="actionNext" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin10"
+            style="@style/LineStyle"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="@string/fm_id"
+                style="@style/LineTitleStyle2" />
+
+            <EditText
+                android:id="@+id/et_fm_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/LineInputStyle"
+                android:background="@null"
+                android:imeOptions="actionNext" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin10"
+            style="@style/LineStyle"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="@string/sku_code"
+                style="@style/LineTitleStyle2" />
+
+            <EditText
+                android:id="@+id/et_sku_code"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/LineContentStyle"
+                android:background="@null"
+                android:inputType="text"
+                android:imeOptions="actionNext" />
+
+            <Button
+                android:id="@+id/btn_select_sku"
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:background="@color/colorAccent"
+                android:text="@string/select"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin10"
+            style="@style/LineStyle"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="@string/lot_num"
+                style="@style/LineTitleStyle2" />
+
+            <EditText
+                android:id="@+id/et_lot_num"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/LineContentStyle"
+                android:background="@null"
+                android:inputType="text"
+                android:imeOptions="actionNext" />
+
+            <Button
+                android:id="@+id/btn_select_lot_num"
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:background="@color/colorAccent"
+                android:text="@string/view"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin10"
+            style="@style/LineStyle"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="@string/move_qty"
+                style="@style/LineTitleStyle2" />
+
+            <EditText
+                android:id="@+id/et_move_qty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/LineContentStyle"
+                android:background="@null"
+                android:inputType="number|numberDecimal"
+                android:imeOptions="actionNext" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin10"
+            style="@style/LineStyle"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="@string/to_loc"
+                style="@style/LineTitleStyle2" />
+
+            <EditText
+                android:id="@+id/et_to_loc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/LineContentStyle"
+                android:background="@null"
+                android:inputType="text"
+                android:imeOptions="actionNext" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin10"
+            style="@style/LineStyle"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="@string/to_id"
+                style="@style/LineTitleStyle2" />
+
+            <EditText
+                android:id="@+id/et_to_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/LineContentStyle"
+                android:background="@null"
+                android:inputType="text"
+                android:imeOptions="actionDone" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/divider" />
+
+    </LinearLayout>
+
+    <include layout="@layout/include_bottom_operating_buttons" />
+
+    <include layout="@layout/include_progress_bar" />
+</RelativeLayout>

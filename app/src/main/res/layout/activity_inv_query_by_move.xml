@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/operatingButtonHeight"
+        android:orientation="vertical">
+
+        <include layout="@layout/include_title" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginTop"
+            style="@style/LineStyle"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="@string/owner_name"
+                style="@style/LineTitleStyle2" />
+
+            <TextView
+                android:id="@+id/tv_owner_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/LineContentStyle"
+                tools:text="ownerName" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginTop"
+            style="@style/LineStyle"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="@string/sku_name"
+                style="@style/LineTitleStyle2" />
+
+            <TextView
+                android:id="@+id/tv_sku_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/LineContentStyle"
+                tools:text="skuName" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginTop"
+            style="@style/LineStyle"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="@string/loc_code"
+                style="@style/LineTitleStyle2" />
+
+            <TextView
+                android:id="@+id/tv_loc_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/LineContentStyle"
+                tools:text="locCode" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginTop"
+            style="@style/LineStyle"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="@string/trace_id"
+                style="@style/LineTitleStyle2" />
+
+            <TextView
+                android:id="@+id/tv_trace_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/LineContentStyle"
+                tools:text="traceId" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginTop"
+            style="@style/LineStyle"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="@string/lot_num"
+                style="@style/LineTitleStyle2" />
+
+            <TextView
+                android:id="@+id/tv_lot_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                style="@style/LineContentStyle"
+                tools:text="lotNum" />
+
+            <Button
+                android:id="@+id/btn_select"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="5"
+                android:background="@color/colorAccent"
+                android:text="@string/select"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginTop"
+            style="@style/LineStyle"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="@string/total_qty"
+                style="@style/LineTitleStyle2" />
+
+            <TextView
+                android:id="@+id/tv_total_qty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/LineContentStyle"
+                tools:text="totalQty" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginTop"
+            style="@style/LineStyle"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="@string/available_qty"
+                style="@style/LineTitleStyle2" />
+
+            <TextView
+                android:id="@+id/tv_available_qty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/LineContentStyle"
+                tools:text="availableQty" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginTop"
+            style="@style/LineStyle"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="@string/hold_qty"
+                style="@style/LineTitleStyle2" />
+
+            <TextView
+                android:id="@+id/tv_hold_qty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/LineContentStyle"
+                tools:text="holdQty" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginTop"
+            style="@style/LineStyle"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="@string/alloc_qty"
+                style="@style/LineTitleStyle2" />
+
+            <TextView
+                android:id="@+id/tv_alloc_qty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/LineContentStyle"
+                tools:text="allocQty" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginTop"
+            style="@style/LineStyle"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="@string/pa_in_qty"
+                style="@style/LineTitleStyle2" />
+
+            <TextView
+                android:id="@+id/tv_pa_in_qty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/LineContentStyle"
+                tools:text="paInQty" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginTop"
+            style="@style/LineStyle"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="@string/pa_out_qty"
+                style="@style/LineTitleStyle2" />
+
+            <TextView
+                android:id="@+id/tv_pa_out_qty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/LineContentStyle"
+                tools:text="paOutQty" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginTop"
+            style="@style/LineStyle"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="@string/rp_in_qty"
+                style="@style/LineTitleStyle2" />
+
+            <TextView
+                android:id="@+id/tv_rp_in_qty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/LineContentStyle"
+                tools:text="rpInQty" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginTop"
+            style="@style/LineStyle"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="@string/rp_out_qty"
+                style="@style/LineTitleStyle2" />
+
+            <TextView
+                android:id="@+id/tv_rp_out_qty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/LineContentStyle"
+                tools:text="rpOutQty" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginTop"
+            style="@style/LineStyle"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="@string/mv_in_qty"
+                style="@style/LineTitleStyle2" />
+
+            <TextView
+                android:id="@+id/tv_mv_in_qty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/LineContentStyle"
+                tools:text="mvInQty" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginTop"
+            style="@style/LineStyle"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="@string/mv_out_qty"
+                style="@style/LineTitleStyle2" />
+
+            <TextView
+                android:id="@+id/tv_mv_out_qty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/LineContentStyle"
+                tools:text="mvOutQty" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/include_bottom_operating_buttons2" />
+
+    <include layout="@layout/include_progress_bar" />
+</RelativeLayout>

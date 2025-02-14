@@ -1,0 +1,284 @@
+<resources>
+    <string name="app_name">WMS_RF</string>
+    <string name="account">账号:</string>
+    <string name="please_input_account">请输入账号</string>
+    <string name="password">密码:</string>
+    <string name="please_input_password">请输入密码</string>
+    <string name="login">登&#160;&#160;&#160;&#160;录</string>
+    <string name="copyright">WMS RF V</string>
+    <string name="receipt">收货</string>
+    <string name="scan_tray_receipt1">扫描托盘收货1</string>
+    <string name="scan_tray_receipt2">扫描托盘收货2</string>
+    <string name="scan_tray_receipt3">扫描托盘收货3</string>
+    <string name="scan_tray_receipt_tray_info">选择跟踪信息</string>
+    <string name="scan_sku_receipt1">扫描商品收货1</string>
+    <string name="scan_sku_receipt2">扫描商品收货2</string>
+    <string name="scan_sku_receipt3">扫描商品收货3</string>
+    <string name="scan_sku_receipt_sku_info">选择商品信息</string>
+    <string name="receipt_lot_att_info">收货商品批次信息</string>
+    <string name="putaway">上架</string>
+    <string name="scan_tray_putaway1">扫描托盘上架1</string>
+    <string name="scan_tray_putaway2">扫描托盘上架2</string>
+    <string name="scan_task_putaway1">扫描任务上架1</string>
+    <string name="scan_task_putaway2">扫描任务上架2</string>
+    <string name="scan_order_putaway1">扫描订单上架1</string>
+    <string name="scan_order_putaway2">扫描订单上架2</string>
+    <string name="picking">拣货</string>
+    <string name="picking_by_order1">按单拣货1</string>
+    <string name="picking_by_order2">按单拣货2</string>
+    <string name="picking_by_wave1">波次拣货1</string>
+    <string name="picking_by_wave2">波次拣货2</string>
+    <string name="picking_by_manual1">手工拣货1</string>
+    <string name="picking_by_manual2">手工拣货2</string>
+    <string name="pick_lot_att_info">拣货批次信息</string>
+    <string name="ship">发货</string>
+    <string name="move">移动</string>
+    <string name="replenishment">补货</string>
+    <string name="scan_rp_task1">扫描补货任务1</string>
+    <string name="scan_rp_task2">扫描补货任务2</string>
+    <string name="check">盘点</string>
+    <string name="scan_task_check1">扫描任务盘点1</string>
+    <string name="scan_task_check2">扫描任务盘点2</string>
+    <string name="scan_task_check3">扫描任务盘点3</string>
+    <string name="scan_task_check4">盘点批次4</string>
+    <string name="scan_task_check5">新增盘点</string>
+    <string name="scan_task_check6">盘点批次6</string>
+    <string name="scan_task_check_owner_info">选择货主</string>
+    <string name="inventory_query">库存查询</string>
+    <string name="inv_query1">库存查询1</string>
+    <string name="inv_query2">库存查询2</string>
+    <string name="inv_lot_att">库存批次3</string>
+    <string name="pick_box_query1">拣货箱查询1</string>
+    <string name="pick_box_query2">拣货箱查询2-单头</string>
+    <string name="pick_box_query3">拣货箱查询3-明细</string>
+    <string name="logout">注销</string>
+    <string name="select">选择</string>
+    <string name="view">查看</string>
+    <string name="confirm">确认</string>
+    <string name="cancel">后退</string>
+    <string name="add">新增</string>
+    <string name="last">上一条</string>
+    <string name="next">下一条</string>
+    <string name="hint">提示</string>
+    <string name="separator">/</string>
+    <string name="distribution_status">分配状态:</string>
+    <string name="all">全部</string>
+    <string name="uncompleted">未完成</string>
+    <string name="completed">已完成</string>
+    <string name="server_response_exception">服务器响应异常</string>
+    <string name="current_version_is_latest">当前已是最新版本</string>
+    <string name="there_is_new_version">检测到新版本</string>
+    <string name="press_again_to_quit">再按一次退出应用</string>
+
+    <string-array name="distribution_status">
+        <item>全部</item>
+        <item>未完成</item>
+        <item>已完成</item>
+    </string-array>
+
+    <!-- 设置服务器 -->
+    <string name="set_server">设置服务器</string>
+    <string name="please_input_server_address">请输入服务器地址</string>
+    <string name="save">保&#160;&#160;&#160;&#160;存</string>
+    <string name="save_success">保存成功</string>
+
+    <!-- 收货 -->
+    <string name="scan_tray_receipt">扫描托盘收货</string>
+    <string name="scan_sku_receipt">扫描商品收货</string>
+    <string name="asn_no">入库单号:</string>
+    <string name="please_scan_or_input_asn_no">请输入或扫描入库单号</string>
+    <string name="trace_no">码盘跟踪号:</string>
+    <string name="please_scan_or_input_trace_no">请输入或扫描码盘跟踪号</string>
+    <string name="sku_name">商品名称:</string>
+    <string name="pack_desc">包装规格:</string>
+    <string name="ti_hi">Ti*Hi:</string>
+    <string name="f_uom">包装单位:</string>
+    <string name="plan_qty">预收数:</string>
+    <string name="t_uom">包装单位:</string>
+    <string name="rcv_qty">现收数:</string>
+    <string name="rcv_loc">收货库位:</string>
+    <string name="please_scan_or_input_rcv_qty">请输入收货数量</string>
+    <string name="whether_to_confirm_receipt">是否确认收货</string>
+    <string name="please_scan_or_input_correct_rcv_qty">请输入正确的收货数量</string>
+    <string name="rcv_qty_can_not_more_than_plan_qty">收货数量不能大于预收数</string>
+    <string name="please_scan_or_input_rcv_loc">请输入或扫描收货库位</string>
+    <string name="sku_code">商品编码:</string>
+    <string name="barcode">商品条码:</string>
+    <string name="please_scan_or_input_sku_code">请输入或扫描商品编码</string>
+    <string name="rcv_trace_no">收货跟踪号:</string>
+    <string name="please_scan_or_input_rcv_trace_no">请输入或扫描收货跟踪号</string>
+
+    <string name="trace_no_grid">跟踪号</string>
+    <string name="sku_name_grid">商品名称</string>
+    <string name="pack_desc_grid">包装规格</string>
+    <string name="sku_code_grid">商品编码</string>
+
+    <!-- 上架 -->
+    <string name="scan_tray_putaway">扫描托盘上架</string>
+    <string name="scan_task_putaway">扫描任务上架</string>
+    <string name="scan_order_putaway">扫描订单上架</string>
+    <string name="trace_id">跟踪号:</string>
+    <string name="please_scan_or_input_trace_id">请输入或扫描跟踪号</string>
+    <string name="please_scan_or_input_order_no_or_zone_code">请输入订单号或库区编码</string>
+    <string name="f_trace_id">源跟踪号:</string>
+    <string name="plan_loc">推荐库位:</string>
+    <string name="pa_uom">上架数:</string>
+    <string name="pa_qty">上架数EA:</string>
+    <string name="pa_loc">上架库位:</string>
+    <string name="please_scan_or_input_pa_loc">请输入或扫描上架库位</string>
+    <string name="please_scan_or_input_pa_trace_id">请输入或扫描上架跟踪号</string>
+    <string name="please_scan_or_input_pa_qty">请输入上架数</string>
+    <string name="please_scan_or_input_correct_pa_qty">请输入正确的上架数量</string>
+    <string name="pa_qty_can_not_more_than_plan_qty">实际上架数不能大于计划上架数</string>
+    <string name="whether_to_confirm_pa">是否确认上架</string>
+    <string name="pa_trace_id">上架跟踪号:</string>
+    <string name="pa_task_id">上架任务Id:</string>
+    <string name="please_scan_or_input_pa_task_id">请输入或扫描上架任务Id</string>
+
+    <!-- 拣货 -->
+    <string name="picking_by_trace_id">标签拣货</string>
+    <string name="picking_by_order">按单拣货</string>
+    <string name="picking_by_wave">波次合拣</string>
+    <string name="picking_by_manual">手工拣货</string>
+    <string name="tag_no">标签号:</string>
+    <string name="please_scan_or_input_tag_no">请输入或扫描标签号</string>
+    <string name="so_no">出库单号:</string>
+    <string name="seq">序号:</string>
+    <string name="please_scan_or_input_so_no">请输入或扫描出库单号</string>
+    <string name="pick_no">拣货单号:</string>
+    <string name="please_scan_or_input_pick_no">请输入或扫描拣货单号</string>
+    <string name="pick_task_id">拣货任务Id:</string>
+    <string name="please_scan_or_input_pick_task_id">请输入或扫描拣货任务Id</string>
+    <string name="please_scan_or_input_so_no_or_pick_no_or_pick_task_id_or_wave_no">请输入出库单号或拣货单号或拣货任务Id或波次单号</string>
+    <string name="wave_no">波次单号:</string>
+    <string name="please_scan_or_input_wave_no">请输入或扫描波次单号</string>
+    <string name="fm_loc">源库位:</string>
+    <string name="fm_id">源跟踪号:</string>
+    <string name="lot_num">批次号:</string>
+    <string name="alloc_qty">分配数:</string>
+    <string name="pick_qty">拣货数:</string>
+    <string name="to_sku">商品条码:</string>
+    <string name="to_loc">目标库位:</string>
+    <string name="to_id">目标跟踪号:</string>
+    <string name="to_pick_loc">拣货库位:</string>
+    <string name="to_pick_id">拣货跟踪号:</string>
+    <string name="complete_count_and_total_count">已完成任务数/总任务数:</string>
+    <string name="please_scan_to_sku">请扫描商品条码</string>
+    <string name="please_input_to_sku_enter">请输入条码后回车</string>
+    <string name="please_scan_or_input_to_loc">请输入或扫描目标库位</string>
+    <string name="please_scan_or_input_pick_loc">请输入或扫描拣货库位</string>
+    <string name="please_scan_or_input_to_id">请输入或扫描目标跟踪号</string>
+    <string name="please_scan_or_input_pick_id">请输入或扫描拣货跟踪号</string>
+    <string name="please_scan_or_input_pick_qty">请输入拣货数量</string>
+    <string name="please_input_correct_pick_qty">请输入正确的拣货数量</string>
+    <string name="pick_qty_can_not_more_than_alloc_qty">拣货数量不能大于分配数量</string>
+    <string name="barcode_is_not_match_this_sku">商品条码和商品不匹配</string>
+    <string name="whether_to_confirm_pick">是否确认拣货</string>
+
+    <!-- 发货 -->
+    <string name="shipment_by_trace_id">按箱号发货</string>
+    <string name="shipment_by_order">按订单发货</string>
+    <string name="shipment_by_face_no">按面单号发货</string>
+    <string name="box_num">箱号:</string>
+    <string name="face_num">面单号:</string>
+    <string name="please_scan_or_input_box_num">请输入或扫描箱号</string>
+    <string name="please_scan_or_input_face_num">请输入或扫描面单号</string>
+    <string name="order_no">订单号:</string>
+    <string name="please_scan_or_input_order_no">请输入或扫描单号</string>
+
+    <!-- 移动 -->
+    <string name="standard_move">标准移动</string>
+    <string name="whole_tray_move">整托移动</string>
+    <string name="whole_loc_move">整库位移动</string>
+    <string name="select_inv">选择库存</string>
+    <string name="move_qty">移动数量:</string>
+    <string name="please_scan_or_input_fm_loc">请输入或扫描源库位:</string>
+    <string name="please_scan_or_input_fm_id">请输入或扫描源跟踪号:</string>
+    <string name="please_input_fm_id_enter">请输入源跟踪号后回车:</string>
+    <string name="please_input_fm_loc_enter">请输入源库位后回车:</string>
+    <string name="please_scan_or_input_sku">请输入或扫描商品:</string>
+    <string name="please_input_sku_enter">请输入商品后回车:</string>
+    <string name="please_scan_or_input_lot_num">请输入或扫描批次号:</string>
+    <string name="please_scan_or_input_move_qty">请输入移动数量:</string>
+    <string name="please_scan_or_input_correct_move_qty">请输入正确的移动数量:</string>
+
+    <!-- 补货 -->
+    <string name="scan_rp_task">扫描补货任务</string>
+    <string name="rp_id">补货任务Id:</string>
+    <string name="please_scan_or_input_rp_id">请输入或扫补货任务Id:</string>
+    <string name="rp_uom">补货数:</string>
+    <string name="rp_qty">补货数EA:</string>
+    <string name="confirm_loc">确认库位:</string>
+    <string name="please_scan_or_input_confirm_loc">请输入或扫描确认库位</string>
+    <string name="please_scan_or_input_rp_qty">请输入补货数</string>
+    <string name="please_scan_or_input_correct_rp_qty">请输入正确的补货数</string>
+    <string name="rp_qty_can_not_more_than_plan_qty">补货数量不能大于计划数</string>
+    <string name="whether_to_confirm_rp">是否确认补货</string>
+
+    <!--盘点-->
+    <string name="scan_task_check">扫描任务盘点</string>
+    <string name="count_no">盘点单号:</string>
+    <string name="please_scan_or_input_count_no">请输入或扫描盘点单号</string>
+    <string name="zone_code">库区:</string>
+    <string name="please_scan_or_input_zone_code">请输入或扫描库区</string>
+    <string name="lane">通道:</string>
+    <string name="please_scan_or_input_lane">请输入或扫描通道</string>
+    <string name="loc_code">库位:</string>
+    <string name="please_scan_or_input_loc_code">请输入或扫描库位</string>
+    <string name="owner_name">货主:</string>
+    <string name="sys_inv_qty">系统库存数:</string>
+    <string name="last_count_qty">上次盘点数:</string>
+    <string name="last_count_op">上次盘点人:</string>
+    <string name="whole_cs_qty">整箱数:</string>
+    <string name="whole_ea_qty">整件数:</string>
+    <string name="lot_att01">生产日期:</string>
+    <string name="lot_att02">失效日期:</string>
+    <string name="lot_att03">入库日期:</string>
+    <string name="lot_att04">批次属性4:</string>
+    <string name="lot_att05">批次属性5:</string>
+    <string name="lot_att06">批次属性6:</string>
+    <string name="lot_att07">批次属性7:</string>
+    <string name="lot_att08">批次属性8:</string>
+    <string name="lot_att09">批次属性9:</string>
+    <string name="lot_att10">批次属性10:</string>
+    <string name="lot_att11">批次属性11:</string>
+    <string name="lot_att12">批次属性12:</string>
+    <string name="please_input_whole_cs_qty">请输入整箱数</string>
+    <string name="please_input_whole_ea_qty">请输入整件数</string>
+    <string name="please_scan_or_input_correct_whole_cs_qty">请输入正确的整箱数</string>
+    <string name="please_scan_or_input_correct_whole_ea_qty">请输入正确的整件数</string>
+    <string name="whether_to_confirm_check">是否确认盘点</string>
+    <string name="please_scan_or_input_owner_code">请输入或扫描货主编码</string>
+    <string name="owner_code">货主编码:</string>
+    <string name="owner_code_grid">货主编码</string>
+    <string name="owner_name_grid">货主名称</string>
+
+    <!--库存查询-->
+    <string name="inv_query">库存查询</string>
+    <string name="pick_box_query">拣货箱查询</string>
+    <string name="total_qty">总数量:</string>
+    <string name="available_qty">可用数:</string>
+    <string name="hold_qty">冻结数:</string>
+    <string name="pk_qty">拣货数:</string>
+    <string name="pa_in_qty">上架待入数:</string>
+    <string name="pa_out_qty">上架待出数:</string>
+    <string name="rp_in_qty">补货待入数:</string>
+    <string name="rp_out_qty">补货待出数:</string>
+    <string name="mv_in_qty">移动待入数:</string>
+    <string name="mv_out_qty">移动待出数:</string>
+    <string name="please_input_sku_code_or_loc_code_or_trace_id">请输入商品编码或库位编码或跟踪号</string>
+    <string name="pick_box_no">拣货箱号:</string>
+    <string name="please_input_or_scan_pick_box_no">请输入或扫描拣货箱号</string>
+    <string name="consignee_code">收货人:</string>
+    <string name="consignee_name">收货人:</string>
+    <string name="consignee_address">收货地址:</string>
+    <string name="contract_name">联系人:</string>
+    <string name="contract_tel">联系方式:</string>
+    <string name="pick_status">拣货状态:</string>
+    <string name="check_status">复核状态:</string>
+    <string name="qty_sku">商品数:</string>
+    <string name="qty_total">单品数:</string>
+    <string name="qty_uom">数量:</string>
+    <string name="qty_ea">数量EA:</string>
+
+</resources>

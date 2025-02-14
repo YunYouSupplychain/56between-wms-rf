@@ -1,0 +1,14 @@
+<resources>
+    <dimen name="margin2">2dp</dimen>
+    <dimen name="margin4">4dp</dimen>
+    <dimen name="margin6">6dp</dimen>
+    <dimen name="margin10">10dp</dimen>
+    <dimen name="baseMargin">16dp</dimen>
+    <dimen name="largeMargin">26dp</dimen>
+    <dimen name="lineMarginLeft">@dimen/margin10</dimen>
+    <dimen name="operatingButtonHeight">52dp</dimen>
+    <dimen name="operatingButtonHeight1">45dp</dimen>
+    <dimen name="marginTop">@dimen/margin4</dimen>
+    <dimen name="marginTopLarge">@dimen/baseMargin</dimen>
+    <dimen name="marginTopSmall">@dimen/margin2</dimen>
+</resources>

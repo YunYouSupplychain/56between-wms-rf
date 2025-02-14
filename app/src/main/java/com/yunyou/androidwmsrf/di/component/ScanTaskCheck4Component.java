@@ -1,0 +1,14 @@
+package com.yunyou.androidwmsrf.di.component;
+
+import com.yunyou.androidwmsrf.di.module.ScanTaskCheck4Module;
+import com.yunyou.androidwmsrf.mvp.ui.activity.ScanTaskCheck4Activity;
+import com.jess.arms.di.component.AppComponent;
+import com.jess.arms.di.scope.ActivityScope;
+
+import dagger.Component;
+
+@ActivityScope
+@Component(modules = ScanTaskCheck4Module.class, dependencies = AppComponent.class)
+public interface ScanTaskCheck4Component {
+    void inject(ScanTaskCheck4Activity activity);
+}

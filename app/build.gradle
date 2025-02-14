@@ -1,0 +1,122 @@
+apply plugin: 'com.android.application'
+apply plugin: 'bugly'
+
+bugly {
+    // 注册时分配的App ID
+    appId = '1ab966f5ce'
+    // 注册时分配的App Key
+    appKey = 'ce80f2b0-7bf1-4157-9033-4802fca15eba'
+}
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'wms'
+            keyPassword 'androidwmsrfbq!@#$%^&*()'
+            storeFile file('./wms.jks')
+            storePassword 'androidwmsrfbq!@#$%^&*()'
+        }
+
+        debug {
+            keyAlias 'wms'
+            keyPassword 'androidwmsrfbq!@#$%^&*()'
+            storeFile file('./wms.jks')
+            storePassword 'androidwmsrfbq!@#$%^&*()'
+        }
+    }
+
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
+    useLibrary 'org.apache.http.legacy'
+
+    compileOptions {
+        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        applicationId 'com.yunyou.androidwmsrf'
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 10
+        versionName "1.0.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk {
+            // 选择要添加的对应cpu类型的.so库。
+            abiFilters 'armeabi', 'x86'
+        }
+    }
+
+    buildTypes {
+        debug {
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            buildConfigField "boolean", "USE_CANARY", "true"
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+        }
+
+        release {
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            buildConfigField "boolean", "USE_CANARY", "false"
+            minifyEnabled true
+            shrinkResources true
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+            android.applicationVariants.all { variant ->
+                variant.outputs.all {
+                    outputFileName = "WmsRF_${defaultConfig.versionName}.apk"
+                }
+            }
+        }
+    }
+
+    lintOptions {
+        disable 'InvalidPackage'
+        disable "ResourceType"
+        abortOnError false
+    }
+}
+
+buildscript {
+    repositories {
+        maven() { url 'https://maven.aliyun.com/repository/jcenter' }
+        maven() { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        maven { url 'https://maven.aliyun.com/repository/mapr-public' }
+        jcenter()
+    }
+}
+
+dependencies {
+    implementation(rootProject.ext.dependencies["cardview-v7"]) {
+        exclude module: 'support-annotations'
+    }
+    annotationProcessor rootProject.ext.dependencies["dagger2-compiler"]
+    implementation rootProject.ext.dependencies["progressmanager"]
+    implementation rootProject.ext.dependencies["retrofit-url-manager"]
+    implementation rootProject.ext.dependencies["lifecyclemodel"]
+    annotationProcessor(rootProject.ext.dependencies["butterknife-compiler"]) {
+        exclude module: 'support-annotations'
+    }
+    implementation rootProject.ext.dependencies["paginate"]
+    implementation 'me.jessyan:arms:2.5.0'
+    testImplementation rootProject.ext.dependencies["junit"]
+    debugImplementation rootProject.ext.dependencies["canary-debug"]
+    releaseImplementation rootProject.ext.dependencies["canary-release"]
+    testImplementation rootProject.ext.dependencies["canary-release"]
+    implementation 'com.blankj:utilcode:1.16.1'
+    implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.40'
+    implementation 'com.sherlockshi.widget:sherlockspinner:1.0.2'
+    implementation 'com.tencent.bugly:crashreport:latest.release'
+    implementation 'com.tencent.bugly:nativecrashreport:latest.release'
+    implementation("com.squareup.retrofit2:converter-simplexml:2.4.0") {
+        exclude module: 'stax'
+        exclude module: 'stax-api'
+        exclude module: 'xpp3'
+    }
+    implementation 'com.allenliu.versionchecklib:library:2.2.0'
+    implementation 'com.afollestad.material-dialogs:core:0.9.6.0'
+    implementation 'me.jessyan:retrofit-url-manager:1.3.0'
+}

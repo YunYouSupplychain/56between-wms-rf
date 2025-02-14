@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/operatingButtonHeight"
+        android:orientation="vertical">
+
+        <include layout="@layout/include_title" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            style="@style/LineStyle"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="@string/so_no"
+                style="@style/LineTitleStyle2" />
+
+            <EditText
+                android:id="@+id/et_so_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/LineInputStyle"
+                android:background="@null"
+                android:imeOptions="actionNext"
+                android:hint="@string/please_scan_or_input_so_no" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin10"
+            style="@style/LineStyle"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="@string/pick_no"
+                style="@style/LineTitleStyle2" />
+
+            <EditText
+                android:id="@+id/et_pick_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/LineInputStyle"
+                android:background="@null"
+                android:imeOptions="actionNext"
+                android:hint="@string/please_scan_or_input_pick_no" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin10"
+            style="@style/LineStyle"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="@string/pick_task_id"
+                style="@style/LineTitleStyle2" />
+
+            <EditText
+                android:id="@+id/et_pick_task_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/LineInputStyle"
+                android:background="@null"
+                android:imeOptions="actionNext"
+                android:hint="@string/please_scan_or_input_pick_task_id" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin10"
+            style="@style/LineStyle"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="@string/wave_no"
+                style="@style/LineTitleStyle2" />
+
+            <EditText
+                android:id="@+id/et_wave_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/LineInputStyle"
+                android:background="@null"
+                android:imeOptions="actionDone"
+                android:hint="@string/please_scan_or_input_wave_no" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/divider" />
+
+    </LinearLayout>
+
+    <include layout="@layout/include_bottom_operating_buttons" />
+
+    <include layout="@layout/include_progress_bar" />
+</RelativeLayout>

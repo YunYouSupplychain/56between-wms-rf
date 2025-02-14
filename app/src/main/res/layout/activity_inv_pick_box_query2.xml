@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/operatingButtonHeight"
+        android:orientation="vertical">
+
+        <include layout="@layout/include_title" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin10"
+            style="@style/LineStyle"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="@string/pick_box_no"
+                style="@style/LineTitleStyle2" />
+
+            <TextView
+                android:id="@+id/tv_pick_box_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/LineContentStyle"
+                tools:text="pickBoxNo" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin6"
+            style="@style/LineStyle"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="@string/consignee_code"
+                style="@style/LineTitleStyle2" />
+
+            <TextView
+                android:id="@+id/tv_consignee_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/LineContentStyle"
+                tools:text="consigneeCode" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin6"
+            style="@style/LineStyle"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="@string/consignee_name"
+                style="@style/LineTitleStyle2" />
+
+            <TextView
+                android:id="@+id/tv_consignee_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/LineContentStyle"
+                tools:text="consigneeName" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin6"
+            style="@style/LineStyle"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="@string/consignee_address"
+                style="@style/LineTitleStyle2" />
+
+            <TextView
+                android:id="@+id/tv_consignee_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/LineContentStyle"
+                tools:text="consigneeAddress" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin6"
+            style="@style/LineStyle"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="@string/contract_name"
+                style="@style/LineTitleStyle2" />
+
+            <TextView
+                android:id="@+id/tv_contract_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/LineContentStyle"
+                tools:text="contractName" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin6"
+            style="@style/LineStyle"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="@string/contract_tel"
+                style="@style/LineTitleStyle2" />
+
+            <TextView
+                android:id="@+id/tv_contract_tel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/LineContentStyle"
+                tools:text="contractTel" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin6"
+            style="@style/LineStyle"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="@string/pick_status"
+                style="@style/LineTitleStyle2" />
+
+            <TextView
+                android:id="@+id/tv_pick_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/LineContentStyle"
+                tools:text="pickStatus" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin6"
+            style="@style/LineStyle"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="@string/check_status"
+                style="@style/LineTitleStyle2" />
+
+            <TextView
+                android:id="@+id/tv_check_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/LineContentStyle"
+                tools:text="checkStatus" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin6"
+            style="@style/LineStyle"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="@string/qty_sku"
+                style="@style/LineTitleStyle2" />
+
+            <TextView
+                android:id="@+id/tv_qty_sku"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/LineContentStyle" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin6"
+            style="@style/LineStyle"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="@string/qty_total"
+                style="@style/LineTitleStyle2" />
+
+            <TextView
+                android:id="@+id/tv_qty_total"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/LineContentStyle" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/include_bottom_operating_buttons2" />
+
+    <include layout="@layout/include_progress_bar" />
+</RelativeLayout>

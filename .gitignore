@@ -1,0 +1,6 @@
+.svn
+### Android Studio ###
+.idea
+.gradle
+/build/
+/app/build

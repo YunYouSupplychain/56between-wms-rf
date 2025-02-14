@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_banner"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginTop="20dp"
+            android:padding="20dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/logo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="@dimen/largeMargin"
+            android:layout_marginRight="@dimen/largeMargin"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_input"
+            android:layout_marginTop="@dimen/baseMargin">
+
+            <EditText
+                android:id="@+id/et_account"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/baseMargin"
+                android:hint="@string/please_input_account"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                android:background="@null"
+                android:textSize="15sp"
+                android:textColor="@color/textPrimary" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="@dimen/largeMargin"
+            android:layout_marginRight="@dimen/largeMargin"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_input"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/baseMargin"
+                android:inputType="textPassword"
+                android:hint="@string/please_input_password"
+                android:singleLine="true"
+                android:imeOptions="actionDone"
+                android:background="@null"
+                android:textSize="15sp"
+                android:textColor="@color/textPrimary" />
+
+            <ImageView
+                android:id="@+id/iv_visible"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:padding="12dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/bg_translucent_selector"
+                android:src="@drawable/icon_invisible" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="26dp"
+            android:layout_marginRight="26dp"
+            android:layout_marginTop="36dp"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/common_button_selector"
+            android:text="@string/login" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="@dimen/baseMargin"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/copyright" />
+
+        <TextView
+            android:id="@+id/tv_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="1.0.1" />
+    </LinearLayout>
+
+    <include layout="@layout/include_progress_bar" />
+</RelativeLayout>
